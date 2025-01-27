@@ -1,5 +1,15 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-const heading = React.createElement("h1",{id:"heading"},"This is Namaste React");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+import React from 'react';
+import { createRoot } from 'react-dom/client';
+const Title = () => (
+  <h1 className="title">Welcome to Namste Javascript!</h1>
+);
+const HeadingComponent = () => (
+  <div className="container">
+    <Title/>
+    <h2>Namste javascript first react functional component.</h2>
+  </div>
+);
+const root = createRoot(document.getElementById('root'));
+root.render(  
+    <HeadingComponent />
+);
